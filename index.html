@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <style>
+      .container {
+        margin: 0 auto;
+        max-width: 1040px;
+      }
+
+      #content {
+        text-align: center;
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
+      }
+
+      .prev-page,
+      .next-page,
+      .page {
+        width: 2rem;
+        height: 2rem;
+        background: grey;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .page.active {
+        background: red;
+      }
+
+      .page.hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pagination" data-total-pages="12" data-current-page="1">
+        <button class="prev-page">&lt;&lt;</button>
+        <button class="page active" data-page="1">1</button>
+        <button class="page" data-page="2">2</button>
+        <button class="page" data-page="3">3</button>
+        <button class="page" data-page="4">4</button>
+        <button class="page" data-page="5">5</button>
+        <button class="page hidden" data-page="6">6</button>
+        <button class="page hidden" data-page="7">7</button>
+        <button class="page hidden" data-page="8">8</button>
+        <button class="page hidden" data-page="9">9</button>
+        <button class="page hidden" data-page="10">10</button>
+        <button class="page hidden" data-page="11">11</button>
+        <button class="page hidden" data-page="12">12</button>
+        <button class="next-page">&gt;&gt;</button>
+      </div>
+
+      <div id="content">Page: 1</div>
+
+      <div class="pagination" data-total-pages="12" data-current-page="1">
+          <button class="prev-page">&lt;&lt;</button>
+          <button class="page active" data-page="1">1</button>
+          <button class="page" data-page="2">2</button>
+          <button class="page" data-page="3">3</button>
+          <button class="page" data-page="4">4</button>
+          <button class="page" data-page="5">5</button>
+          <button class="page hidden" data-page="6">6</button>
+          <button class="page hidden" data-page="7">7</button>
+          <button class="page hidden" data-page="8">8</button>
+          <button class="page hidden" data-page="9">9</button>
+          <button class="page hidden" data-page="10">10</button>
+          <button class="page hidden" data-page="11">11</button>
+          <button class="page hidden" data-page="12">12</button>
+          <button class="next-page">&gt;&gt;</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
